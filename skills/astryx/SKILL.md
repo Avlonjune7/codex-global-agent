@@ -1,24 +1,21 @@
 ---
 name: astryx
-description: "在用户选用 Astryx、项目已依赖 @astryxdesign，或新 React 项目按设计规范选定 Astryx 后，查询组件、主题、模板并实现 UI；不用于给已有非 Astryx 项目自动换库。"
+description: "用于已选用 Astryx 或依赖 @astryxdesign 的项目，查询组件、主题、模板并实现 UI；不自动迁移其他项目。"
 ---
 
 # Astryx
 
-基于 [官方 Skill](https://github.com/meta/astryx/blob/main/plugins/astryx/skills/astryx/SKILL.md) 的个人适配版。
+基于 [官方 Skill](https://github.com/meta/astryx/blob/main/plugins/astryx/skills/astryx/SKILL.md) 的个人适配版。遵循个人及项目设计规范，WSL Debian 为默认开发环境。
 
-遵循个人 DESIGN.md 和项目约束：Astryx 提供已选用项目的视觉基准；Oil UI Pro 仅按需完善业务布局、体验和截图验收。已有非 Astryx 项目不因一般 UI 请求安装本库。开发、构建和 CLI 默认在 WSL Debian 执行。
+## 查询与实现
 
-Astryx, a design system and UI library, is available on this computer.
-Use it for UI, components and themes in projects that have selected Astryx.
-Its docs, components, templates, and themes are all reachable through `astryx`. Start with `astryx search '<what you need>'`.
-Then read `astryx component <Name>` or `astryx docs <topic>`, not the package's files.
-In a project, the project's version of Astryx answers automatically.
-To build UI, work in a project folder (create one if there is none). Add `@astryxdesign/core` and `@astryxdesign/cli` to a new project or one without `@astryxdesign/core`; to a project that already has `@astryxdesign/core`, add `@astryxdesign/cli` at the same version. Run `astryx init` there and follow the agent docs it writes.
-WORKFLOW — start new Astryx pages from a suitable template; local edits reuse the existing page:
-1. `astryx build "<idea>"` — names the template to scaffold from and the parts it lacks.
-2. `astryx template <name> <path>` — scaffold it; preserve its frame, gap and padding unless business requirements, responsiveness or accessibility require a change; replace the content.
-3. `astryx template <Block>` for parts it lacks; `astryx component <Name>` to read props before using one.
-Before delivery, prefer Astryx components and tokens; retain necessary semantic HTML and custom CSS without expanding a local edit. Follow the project’s required checks and production build, and inspect the actual desktop/mobile rendering as appropriate. Do not skip engineering checks because a design skill suggests doing so.
-If `astryx` is not found, run `npm i -g @astryxdesign/cli` first.
+- 已知组件先用 `astryx component Button --props`；多个组件一次查，如 `astryx component Button Badge --props`。需要示例再去掉 `--props`，需求不明确才 `astryx search '<需求>'`；主题等规则用 `astryx docs <topic>`。
+- 项目中的 CLI 自动优先项目版本。已读文档且版本未变时复用，不重复列目录、查版本或读取整个包源码。
+- 新页面先 `astryx build "<需求>"` 选模板，再 `astryx template <name> <path>`；缺少的区块按需查询。沿用主题、排版与间距，仅按业务、响应式、可访问性需要调整；局部修改复用当前页面。
+- 组件和设计变量优先，保留必要的语义 HTML 与自定义 CSS。Oil UI Pro 按需完善布局和体验，不重做 Astryx 视觉体系。
 
+## 接入与验证
+
+- 只给已选定 Astryx 的项目安装依赖；CLI 与 core 使用匹配版本，加入所选主题及 peer dependencies。`astryx init` 后审查修改，不覆盖原有工程规则。
+- 找不到命令先检查现有安装和 PATH；确认缺失再安装 `@astryxdesign/cli`。普通开发任务不例行升级或重装环境。
+- 按项目要求完成检查和生产构建，按改动范围查看实际画面与交互。复用预览和已通过的验证，不重复无关全站检查；未验证部分如实说明。
