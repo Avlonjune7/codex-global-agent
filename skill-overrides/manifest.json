@@ -35,6 +35,16 @@
       "path": "plugins/cache/openai-curated-remote/sites/1.1.6/skills/sites/SKILL.md",
       "before_sha256": "e203320d1810d204b82f770288e08f232c3c87de416b234c11ad1694aaedb554",
       "after_sha256": "a46d2462767e19dadf1d3245628653945a7d57527cadd830e10f0ceb76df94f9"
+    },
+    {
+      "path": "skills/.system/imagegen/references/mode-guide.md",
+      "before_sha256": null,
+      "after_sha256": "a868fa269547bb2156c2d499651857fbd40fd694f766ebecac641e37ab6ac1de"
+    },
+    {
+      "path": "skills/.system/imagegen/SKILL.md",
+      "before_sha256": "681ddb4ad6d06a2acc78a3535b583f8d0c1ea800ecda3d56370d3310fd2cd4ba",
+      "after_sha256": "8372b850e12083d68ac35031c652be084f5eb81fa24db0acd0c9f381ff0eea2b"
     }
   ]
 }

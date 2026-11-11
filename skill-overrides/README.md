@@ -19,4 +19,4 @@ python3 scripts/sync_skill_overrides.py --codex-home /path/to/.codex --apply
 
 第三方更新或插件缓存刷新可能恢复上游文件。明确维护技能时运行检查并审查新版本差异，再更新覆盖层与 manifest；不在普通任务中轮询、自动降级或盲目重放。技能目录的前置描述可能在聊天启动时注入，完整确认新触发条件应使用新聊天。
 
-检查了 browser-skill 与 Sites Remix：前者的登录态授权和会话清理、后者的显式 remix 边界继续保留。未修改系统托管技能，不声称能覆盖宿主强制指令。
+检查了 browser-skill 与 Sites Remix：前者的登录态授权和会话清理、后者的显式 remix 边界继续保留。imagegen 为系统托管技能的个人覆盖层，更新可能恢复；不声称能覆盖宿主强制指令。
