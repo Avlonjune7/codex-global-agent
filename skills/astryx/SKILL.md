@@ -11,8 +11,8 @@ description: "用于已选用 Astryx 或依赖 @astryxdesign 的项目，查询�
 
 - 已知组件先用 `astryx component Button --props`；多个组件一次查，如 `astryx component Button Badge --props`。需要示例再去掉 `--props`，需求不明确才 `astryx search '<需求>'`；主题等规则用 `astryx docs <topic>`。
 - 项目中的 CLI 自动优先项目版本。已读文档且版本未变时复用，不重复列目录、查版本或读取整个包源码。
-- 新页面先 `astryx build "<需求>"` 选模板，再 `astryx template <name> <path>`；缺少的区块按需查询。沿用主题、排版与间距，仅按业务、响应式、可访问性需要调整；局部修改复用当前页面。
-- 组件和设计变量优先，保留必要的语义 HTML 与自定义 CSS。Oil UI Pro 按需完善布局和体验，不重做 Astryx 视觉体系。
+- 新页面先复用项目已有页面和样板；没有适用样板时才用 `astryx build "<需求>"` 选模板，再 `astryx template <name> <path>`，不覆盖现有页面。缺少的区块按需查询。沿用主题、排版与间距，仅按业务、响应式、可访问性需要调整；局部修改复用当前页面。
+- 先用项目组件，再用已安装组件库；仅能力不足时新增最小业务组件，不重复包装基础组件或提前抽象。组件和设计变量优先，保留必要的语义 HTML 与自定义 CSS。Oil UI Pro 按需完善布局和体验，不重做 Astryx 视觉体系。
 
 ## 接入与验证
 

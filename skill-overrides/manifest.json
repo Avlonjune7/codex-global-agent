@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "path": "skills/astryx/SKILL.md",
+      "before_sha256": "e9301539241d3eb70964e270ddf3ac4fb5872c45cdf877ade02002da496f2ec1",
+      "after_sha256": "cf537ec7a78c37abd4f7672c87433a1f610587d1d13bd30c552e5770ff7e0fdf"
+    },
+    {
+      "path": "skills/oil-ui-pro/SKILL.md",
+      "before_sha256": "daa9bbb717f79fcd8fe957c909cd124ad4dec3f530ae2dbda7eb48706b6a912d",
+      "after_sha256": "8ea3f8767ebde6e6110ed95f273c13e9982be00852fdf4d41832778161054a19"
+    },
+    {
+      "path": "skills/oil-ui-pro/references/implementation.md",
+      "before_sha256": "fb4f1d061b17537130021662d15bfedf689823b26efa9a9356112f2a47af1d7b",
+      "after_sha256": "71d7b778eebf3daa27510d525ddf6a9bf87dec3379897b9b2bd941491650fcb4"
+    },
+    {
+      "path": "skills/web-design-guidelines/SKILL.md",
+      "before_sha256": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f",
+      "after_sha256": "e5e461eb7108cd39b2d0a03cd6511244c69ae57320f088dab0416fb565f0d1ef"
+    },
+    {
+      "path": "skills/playwright-cli/references/command-catalog.md",
+      "before_sha256": null,
+      "after_sha256": "c388c9c8f413aa0b466e3ef76f0b9f45792278dda58eb9e0e8481a73b3d75b46"
+    },
+    {
+      "path": "skills/playwright-cli/SKILL.md",
+      "before_sha256": "b07a6cbe4e5b638046fe0b9df0e84783cb9899f0aed3db1eef915601c3260a64",
+      "after_sha256": "6f8b73e6b169d955b31474c29b0109725d0077090062d7b08014045ca4420743"
+    },
+    {
+      "path": "plugins/cache/openai-curated-remote/sites/1.1.6/skills/sites/SKILL.md",
+      "before_sha256": "e203320d1810d204b82f770288e08f232c3c87de416b234c11ad1694aaedb554",
+      "after_sha256": "a46d2462767e19dadf1d3245628653945a7d57527cadd830e10f0ceb76df94f9"
+    }
+  ]
+}
