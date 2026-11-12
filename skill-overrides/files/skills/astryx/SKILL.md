@@ -5,7 +5,7 @@ description: "用于已选用 Astryx 或依赖 @astryxdesign 的项目，查询�
 
 # Astryx
 
-基于 [官方 Skill](https://github.com/meta/astryx/blob/main/plugins/astryx/skills/astryx/SKILL.md) 的个人适配版。遵循个人及项目设计规范，WSL Debian 为默认开发环境。
+基于 [官方 Skill](https://github.com/meta/astryx/blob/main/plugins/astryx/skills/astryx/SKILL.md) 的个人适配版。遵循个人及项目设计规范。
 
 ## 查询与实现
 
